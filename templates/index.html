@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTMl Page</title>
+</head>
+
+<body>
+    {# <h1>{{"Welcome " + html_fname}} </h1> #}
+    <h3>Hello, {{html_fname | upper}} {{html_lname | lower}}</h3>
+    <h3>{{"mohit kumar" | title}}</h3>
+    <h3>{{"Jatin kumar" | capitalize}}</h3>
+    <h3>Course : {{html_course}}</h3>
+    <h3>Roll No : {{html_roll}}</h3>
+    <p>Original Priitce : {{html_price}}</p>
+    <p>Gst Included Price : {{html_price + (html_price*0.18) }}</p>
+    
+</body>
+
+</html>   
