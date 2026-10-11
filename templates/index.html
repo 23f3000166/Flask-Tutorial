@@ -6,9 +6,25 @@
 </head>
 
 <body>
-    <h1>Hello, {{html_name}}</h1>
-    <h3>Course : {{html_course}}</h3>
-    <h4>Roll No : {{html_roll}}</h4>
+    {% if is_logged_in %}
+    <h1>Logged in Successfully</h1>
+    {% else %}
+    <h1>Please Log in</h1>
+    {% endif %}
+
+    {%if html_marks >= 90 %}
+    <h3>Grade : A</h3>
+    {%elif html_marks >= 80 %}
+    <h3>Grade : B</h3>
+    {%elif html_marks >= 70 %}
+    <h3>Grade : C</h3>
+    {% else %}
+    <h3>Grade : Fail</h3>
+    {% endif %}
+    <h1></h1>
+
+
+
 </body>
 
 </html>   
